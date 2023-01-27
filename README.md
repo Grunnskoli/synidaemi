@@ -1,4 +1,4 @@
-# Sýnidæmi með verkefnum - master
+# Sýnidæmi með verkefnum
 
 * [Verkefni 1](https://grunnskoli.github.io/Synidaemi/)
 * [Verkefni 2](https://grunnskoli.github.io/Synidaemi/verkefni-2)
