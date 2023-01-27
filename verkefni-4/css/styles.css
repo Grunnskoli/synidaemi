@@ -1,0 +1,279 @@
+* { box-sizing: border-box } 
+html {
+    scroll-behavior: smooth;
+  }
+/* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+
+body {
+    margin: 0; /* tek út sjálgefið 10px margin */
+    background: linear-gradient(to top, #024386, #0064CE, #001933);
+    color: #444;
+    font: 400 1em/1.5 "Open Sans", sans-serif; /* samsett skipun: weight/height, size, family */
+}
+h1, h2 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 1.8em;
+}
+blockquote {
+    background-color: rgba(255,255,255,0.3); /* (r,g,b,opacity 0-1)*/
+    padding: 1em 1em 1em 3em;
+    margin: 0;
+}
+a {
+    color: #0064ce;
+}
+blockquote a {
+    line-height: 1.8;
+}
+blockquote ul {
+    list-style-type: none;
+}
+.frontpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3em 1em
+}
+.fyrirsogn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    align-items: center;
+    /*border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    background-color:#3496ff;
+    background: radial-gradient( #024386, #3496ff,  #024386);*/
+    text-align: center;
+}
+.fyrirsogn h1 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #F7D37E;
+    font-size: 2.5em;
+    line-height: .9em;
+    margin: 0;
+}
+.fyrirsogn a {
+    display: block;
+    width: 8em;
+    margin: 0 auto;
+    color:white;
+    border: 1px solid #fff;
+    border-radius: .4em;
+    padding: .5em;
+    background: linear-gradient(#024386, #0064CE, #024386);
+    text-decoration: none;
+}
+.frikka {
+    display: grid;
+    border: 0;
+    margin-bottom:0;
+}
+.frikka h1 {
+    font-family: 'Fredericka the Great', cursive;
+    color: #024386;
+    font-size: 6em;
+    margin:0;
+    text-align: center;
+}
+
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* bakgrunnar */
+.beige {
+    background: linear-gradient(to bottom, #F7D37E, #f6f1d3);
+    padding: 1em 1em 2em 1em;
+}
+.topnav {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+.topnav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom:1em;
+    text-transform: uppercase;
+}
+.verkefni {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    text-align: right;
+    color: #F7D37E;
+}
+.copy {
+    color:#fff;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+/******** efst á síðu takki *****/
+.topbutt {
+    background-color: #0064ce;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    display: block;
+    position:relative; /* absolute, fixed  */
+    width: 1.5em;
+    padding: 0 .2em;
+    margin: 0 auto;
+}
+.topbutt:active, .topbutt:hover  {
+    background-color: #0064ce;
+    color: #fff;
+}
+.foot {
+    color: #fff;
+    padding: 0 1em
+}
+.foot a {
+    color: wheat;
+}
+.foot a:visited {
+    color: #fff;
+}
+.foot a:hover {
+    text-decoration: none;
+}
+.foot li {
+    list-style-type: none;
+    padding-bottom: .5em;
+}
+.skyring {
+    margin:0;
+    padding:1em 0 0 0;
+}
+.innerlinks {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-image: linear-gradient(#1d52c5, #2c416d);
+}
+.innerlinks a{
+    display: block;
+    text-align: center;
+    padding: .5em 1em;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+@media screen and (min-width: 37.5em) {  
+    .fyrirsogn h1 {
+        font-size: 3.5em;
+    }
+    .innerlinks {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .innerlinks a {
+        border: 0;
+    }
+}
+
+/************** Viðmið 48em = 760px spjaldtölvur *******************/
+
+@media screen and (min-width: 48em) {  
+    /* grid */
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gap {
+        gap: 2em
+    }
+    .topnav {
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-around;
+    }
+    .frontpage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*height: 100vh;*/
+    }
+    /*.fyrirsogn {
+        width: 40em;
+        height: 40em;
+        background-color:#3496ff;
+        background: radial-gradient( #024386, #3496ff,  #024386);
+        text-align: center;
+    }*/
+    .fyrirsogn h1 {
+        font-size: 6em;
+        margin-top:1em;
+    }
+    .innerlinks a {
+        border-right: 1px solid white;
+    }
+    .innerlinks a:last-child {
+        border:0;
+    }
+}
+
+/************** Viðmið 60em 960px = fartölvur *******************/
+
+@media screen and (min-width: 60em) {  
+    .container {
+        max-width: 60em; /* verður ekki breiðari dálkur */
+        margin: 0 auto; /* top+bottom og left+right */
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .topnav {
+        margin-top: 7em;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .topnav a {
+        padding: 0 0 0 3em;
+    }
+
+    .verkefni {
+        text-align: right;
+        color: #F7D37E;
+    }
+
+    .gap {
+        gap: 3em
+    }
+    .margintop {
+        margin-top: 3em;
+    }
+    .fyrirsogn h1 {
+        font-size: 8em;
+    }
+}
+@media screen and (min-width: 90em) {  
+    .fyrirsogn {
+        max-width: 90em;
+    }
+}
