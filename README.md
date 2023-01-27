@@ -1,4 +1,4 @@
-# Sýnidæmi með verkefnum gh-pages
+# Sýnidæmi með verkefnum - master
 
 * [Verkefni 1](https://grunnskoli.github.io/synidaemi/)
 * [Verkefni 2](https://grunnskoli.github.io/synidaemi/verkefni-2)
