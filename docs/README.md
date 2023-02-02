@@ -1,6 +1,4 @@
-# Námskeið
-
-## Sýnidæmi með verkefnum
+### Námskeið 
 
 * [Verkefni 1](https://grunnskoli.github.io/synidaemi/)
 * [Verkefni 2](https://grunnskoli.github.io/synidaemi/verkefni-2)
