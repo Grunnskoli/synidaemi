@@ -1,13 +1,16 @@
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview
+/*https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview*/
 
 const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello world!";
+
 /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const */
 
+/* html element */
 document.querySelector("html").addEventListener("click", function () {
     alert("Ouch! Stop poking me!");
   });
 
+/* mynd skipt út */
 const myImage = document.querySelector("img");
 
   myImage.onclick = () => {
@@ -19,8 +22,35 @@ const myImage = document.querySelector("img");
     }
   };
 
+
+/* breyta texta */
+const myButton = document.querySelector("button");
+const myHeading = document.querySelector("h1");
+
+function setUserName() {
+    let myName = prompt("Please enter your name.");
+    if (!myName) {
+        setUserName();
+    } else {
+        localStorage.setItem("name", myName);
+        myHeading.textContent = "Mozilla is cool, " + myName;
+    }
+}
+
+myButton.onclick = () => {
+    setUserName();
+  };
+
+/* javascript breytur */
+
 let myVariable = "Bob";
 myVariable = "Steve";
+
+let myNum = 0;
+myNum = myNum + 1;
+
+let myBolean = true;
+myBolean = !myBolean;
 
 /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let */
 
