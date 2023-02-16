@@ -25,7 +25,7 @@ const myImage = document.querySelector("img");
 
 /* breyta texta */
 const myButton = document.querySelector("button");
-const myHeading = document.querySelector("h1");
+const myHeadingTxt = document.querySelector("h1");
 
 function setUserName() {
     let myName = prompt("Please enter your name.");
@@ -33,7 +33,7 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem("name", myName);
-        myHeading.textContent = "Mozilla is cool, " + myName;
+        myHeadingTxt.textContent = "Mozilla is cool, " + myName;
     }
 }
 
